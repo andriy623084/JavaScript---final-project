@@ -1,0 +1,30 @@
+.products{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 45px 25px 72px 30px;
+   &__blocks{
+     text-align: center;
+     color: @productcolor;
+     width: 30%;
+     &_image{
+       height: 190px;
+     }
+     &_h3{
+       padding: 29px 0 24px 0;
+     }
+     &_p{
+       padding-bottom: 24px;
+     }
+     &_price{
+       font-size: 30px;
+       font-weight: bold;
+     }
+     &_button{
+       font-size: @sizetextinbutton;
+       background-color: @buttoncolor;
+       color: @textinbutton;
+       padding: 12px 12px 10px 12px;
+     }
+   }
+ }

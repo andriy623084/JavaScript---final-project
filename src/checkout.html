@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="center-block-main">
+        <div class="header">
+            <p class="header__logo">Musical instruments</p>
+            <div class="header__contact-info">
+                <p class="header__contact-info_phone"><img src="images/icons/IconPhone2.jpg" alt="Call me baby">+371  282  20  760</p>
+                <p class="header__contact-info_trolley"><img src="images/icons/trolleyIcon.png" alt="by it only today"> </p>
+            </div>
+        </div>
+        <div class="navbar clearfix">
+            <nav>
+                <ul class="navbar__menu">
+                    <li><a href="homepage.html">home</a></li>
+                    <li><a href="#">band instruments drums</a></li>
+                    <li><a href="#">erhu</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">support</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__search">
+                <form action="" method="get">
+                    <input type="image"src="images/icons/searchIcon.png" class="navbar__search_button">
+                    <input type="search" class="navbar__search_field" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="checkout center-block-main" id="checkout">
+    <div id="checkout-product1"></div>
+    <div id="checkout-product2"></div>
+    <div id="checkout-product3"></div>
+</div>
+<div class="succesfull-meaasge"></div>
+
+<button class="products__blocks_button center-block-main" id="submitButton">Submit purchases </button>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal__content">
+        <span class="modal__content_close">&times;</span>
+        <p>Login</p>
+        <label>Email</label><input id="Loginemail"  type="text" placeholder="your email" style="margin-left: 30px"><br>
+        <label>Password</label><input id="Loginpassword" type="password" placeholder="your password"><br>
+        <div id="place-for-error-onlogin"></div>
+
+        <button type="button" id="Loginbutton" onclick="LoginUser()">Login</button><br>
+        <label>Don`t have an account?</label><a href="register-user.html">REGISTER</a>
+    </div>
+
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.popular-products-title{
+  text-align: center;
+  text-transform: uppercase;
+  color: @productcolor;
+  padding-bottom: 25px;
+}
+.popular-products{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  padding: 45px 25px 72px 30px;
+  flex-wrap: wrap;
+  &__blocks{
+    text-align: center;
+    color: @productcolor;
+    border: @borderpopularproduct;
+    width: 20%;
+    padding-bottom: 32px;
+    margin-bottom: 25px;
+    &_h3{
+      padding: 29px 0 0 0;
+      font-size: @sizetextinbutton;
+      border-top: @borderpopularproduct;
+
+    }
+    &_p{
+      padding-bottom: 7px;
+    }
+    &_button{
+      font-size: 12px;
+      background-color: @buttoncolor;
+      color: @textinbutton;
+      padding: 8px 27px 7px 27px;
+      align-items: baseline;
+    }
+  }
+}

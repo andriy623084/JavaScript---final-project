@@ -1,0 +1,66 @@
+
+.header{
+  border-bottom: @border;
+  align-items: baseline;
+  padding: 21px 0 21px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: @border;
+  &__logo{
+    padding-top: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__contact-info{
+    display: flex;
+    justify-content: space-between;
+    &_phone{
+      padding: 12px 12px 0 0;
+      img{
+        vertical-align: middle;
+        -webkit-margin-start: unset;
+        padding-right: 5px;
+      }
+    }
+    &_trolley {
+      padding: 10px 12px 5px 12px;
+      border: @border;
+    }
+      img{
+        vertical-align: middle;
+        -webkit-margin-start: unset;
+        padding-right: 5px;
+      }
+    }
+}
+.navbar{
+  display: flex;
+  padding: 7px 0 5px 0;
+  &__menu{
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 24px 6px 0;
+    li a{
+      padding-right: 24px;
+      }
+    li:first-child{
+      border-bottom: @border;
+      width: 80px;
+      padding-bottom: 10px;
+    }
+  }
+  &__search{
+    &_field{
+      border: none;
+      color: #cccccc;
+      -webkit-appearance: none; /*for Safari*/
+      &::placeholder{
+        color: #cccccc;
+      }
+    }
+  }
+}

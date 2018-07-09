@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+</head>
+<body onload="getDataUser()">
+<header>
+    <div class="center-block-main">
+        <div class="header">
+            <p class="header__logo">Musical instruments</p>
+            <div class="header__contact-info">
+                <p class="header__contact-info_phone"><img src="images/icons/IconPhone2.jpg" alt="Call me baby">+371  282  20  760</p>
+                <p class="header__contact-info_trolley"><img src="images/icons/trolleyIcon.png" alt="by it only today"><span id="trolley"></span> <a href="checkout.html" id="linkToCheckout">checkout</a></p>
+            </div>
+        </div>
+        <div class="navbar clearfix">
+            <nav>
+                <ul class="navbar__menu">
+                    <li><a href="homepage.html">home</a></li>
+                    <li><a href="#">band instruments drums</a></li>
+                    <li><a href="#">erhu</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">support</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__search">
+                <form action="" method="get">
+                    <input type="image"src="images/icons/searchIcon.png" class="navbar__search_button">
+                    <input type="search" class="navbar__search_field" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="success center-block-main">
+    <img src="images/icons/thumb_up-512.png" class="success__thumb">
+    <h1>All instruments will be shipped to  next address </h1>
+    <img src="images/icons/truck.png" class="success__truck">
+    <div class="success-address" id="success-address"></div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

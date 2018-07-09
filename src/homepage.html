@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first html file </title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="center-block-main">
+        <div class="header">
+            <p class="header__logo">Musical instruments</p>
+            <div class="header__contact-info">
+                <p class="header__contact-info_phone"><img src="images/icons/IconPhone2.jpg" alt="Call me baby">+371  282  20  760</p>
+                <p class="header__contact-info_trolley"><img src="images/icons/trolleyIcon.png" alt="by it only today"><span id="trolley"></span> <a href="checkout.html" id="linkToCheckout">checkout</a></p>
+            </div>
+        </div>
+        <div class="navbar clearfix">
+            <nav>
+                <ul class="navbar__menu">
+                    <li><a href="homepage.html">home</a></li>
+                    <li><a href="#">band instruments drums</a></li>
+                    <li><a href="#">erhu</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">support</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__search">
+                <form action="" method="get">
+                    <input type="image"src="images/icons/searchIcon.png" class="navbar__search_button">
+                    <input type="search" class="navbar__search_field" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<img src="images/homepage/piano_musical_instrument_monochrome_dust_music_macro_dark-158628.jpg!d.jpg">
+
+
+<div class="products center-block-main" id="products">
+    <div class="products__blocks" id="first1">
+        <img src="images/products/first.jpg" class="products__blocks_image">
+        <h3 class="products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <div id="56">
+        <span class="products__blocks_price ">56</span><br>
+        <button class="products__blocks_button" id="product1" onclick="productPrice(event)">BUY NOW</button>
+        </div>
+    </div>
+    <div class="products__blocks" id="second2">
+        <img src="images/products/569e7a49b901b_thumb900%20copy.jpg" class="products__blocks_image">
+        <h3 class="products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="products__blocks_p">Ihor level genereation gitar with few additional developments like new base and handler</p>
+        <div id="63">
+        <span class="products__blocks_price " >63</span><br>
+        <button class="products__blocks_button" id="product2" onclick="productPrice(event)">BUY NOW</button>
+        </div>
+    </div>
+    <div class="products__blocks" id="third3">
+        <img src="images/products/product3.jpg" class="products__blocks_image">
+        <h3 class="products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <div id="78">
+        <span class="products__blocks_price ">78</span><br>
+        <button class="products__blocks_button" id="product3" onclick="productPrice(event)">BUY NOW</button>
+        </div>
+    </div>
+</div>
+<h1 class="popular-products-title">Popular products</h1>
+<div class="popular-products center-block-main" id="popular-products">
+    <div class="popular-products__blocks " id="popular-product-title1">
+        <img src="images/products/saks.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product1" onclick="productPricePopular(event)">55</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title2">
+        <img src="images/products/saks.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product2" onclick="productPricePopular(event)">67</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title3">
+        <img src="images/products/kindOFGitar.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product3" onclick="productPricePopular(event)">82</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title4">
+        <img src="images/products/skrypka2.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product14" onclick="productPricePopular(event)">45</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title5">
+        <img src="images/products/skrypka.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product5" onclick="productPricePopular(event)">85</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title6">
+        <img src="images/products/bigSkrypka.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product6" onclick="productPricePopular(event)">38</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title7">
+        <img src="images/products/klarnet.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product7" onclick="productPricePopular(event)">44</button>
+    </div>
+    <div class="popular-products__blocks" id="popular-product-title8">
+        <img src="images/products/cutedskrypka.jpg">
+        <h3 class="popular-products__blocks_h3">Lorem Ipsum dorom</h3>
+        <p class="popular-products__blocks_p">second level genereation gitar with few additional developments like new base and handler</p>
+        <button class="popular-products__blocks_button" id="popular-product8" onclick="productPricePopular(event)">47</button>
+    </div>
+</div>
+<div id="additional"></div>
+
+<footer>
+    <div class="footer ">
+        <nav class="footer__menu">
+            <ul class="footer__menu_items">
+                <li><a href="#">home</a></li>
+                <li><a href="#">band instruments drums</a></li>
+                <li><a href="#">erhu</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

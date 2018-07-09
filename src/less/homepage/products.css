@@ -1,0 +1,16 @@
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 45px 25px 72px 30px;
+}
+.products__blocks_h3 {
+  padding: 29px 0 24px 0;
+}
+.products__blocks_p {
+  padding-bottom: 24px;
+  text-align: center;
+}
+.products__blocks_price {
+  font-size: 30px;
+  font-weight: bold;
+}

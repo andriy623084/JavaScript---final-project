@@ -1,0 +1,483 @@
+.checkout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkout div {
+  width: 30%;
+}
+.checkout div .products__blocks {
+  width: 100%;
+}
+.checkout div .products__blocks div button {
+  display: none;
+}
+.checkout div .products__blocks .popular-products__blocks_button {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+#submitButton {
+  margin-top: 20px;
+}
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.modal__content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.modal__content p {
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 10px;
+  color: #5f5e5e;
+}
+.modal__content label {
+  color: #5f5e5e;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.modal__content #Loginemail {
+  border: none;
+  color: #5f5e5e;
+  -webkit-appearance: none;
+  /*for Safari*/
+}
+.modal__content #Loginemail::placeholder {
+  color: #cccccc;
+}
+.modal__content #Loginpassword {
+  border: none;
+  color: #5f5e5e;
+  -webkit-appearance: none;
+  /*for Safari*/
+  padding-left: 5px;
+}
+.modal__content #Loginpassword::placeholder {
+  color: #cccccc;
+}
+.modal__content #Loginbutton {
+  margin: 10px 0 10px 0;
+  background-color: #c84344;
+  color: white;
+  font-size: 18px;
+}
+.modal__content_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal__content_close:hover,
+.modal__content_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer {
+  background-color: #000000;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer__menu_items {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.header {
+  align-items: baseline;
+  padding: 21px 0 21px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+.header__logo {
+  padding-top: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header__contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+.header__contact-info_phone {
+  padding: 12px 12px 0 0;
+}
+.header__contact-info_phone img {
+  vertical-align: middle;
+  -webkit-margin-start: unset;
+  padding-right: 5px;
+}
+.header__contact-info_trolley {
+  padding: 10px 12px 5px 12px;
+  border: 2px solid #ccc;
+}
+.header__contact-info img {
+  vertical-align: middle;
+  -webkit-margin-start: unset;
+  padding-right: 5px;
+}
+.navbar {
+  display: flex;
+  padding: 7px 0 5px 0;
+}
+.navbar__menu {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 24px 6px 0;
+}
+.navbar__menu li a {
+  padding-right: 24px;
+}
+.navbar__menu li:first-child {
+  border-bottom: 2px solid #ccc;
+  width: 80px;
+  padding-bottom: 10px;
+}
+.navbar__search_field {
+  border: none;
+  color: #cccccc;
+  -webkit-appearance: none;
+  /*for Safari*/
+}
+.navbar__search_field::placeholder {
+  color: #cccccc;
+}
+.popular-products-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #5f5e5e;
+  padding-bottom: 25px;
+}
+.popular-products {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  padding: 45px 25px 72px 30px;
+  flex-wrap: wrap;
+}
+.popular-products__blocks {
+  text-align: center;
+  color: #5f5e5e;
+  border: 1px solid #ccc;
+  width: 20%;
+  padding-bottom: 32px;
+  margin-bottom: 25px;
+}
+.popular-products__blocks_h3 {
+  padding: 29px 0 0 0;
+  font-size: 18px;
+  border-top: 1px solid #ccc;
+}
+.popular-products__blocks_p {
+  padding-bottom: 7px;
+}
+.popular-products__blocks_button {
+  font-size: 12px;
+  background-color: #c84344;
+  color: white;
+  padding: 8px 27px 7px 27px;
+  align-items: baseline;
+}
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 45px 25px 72px 30px;
+}
+.products__blocks {
+  text-align: center;
+  color: #5f5e5e;
+  width: 30%;
+}
+.products__blocks_image {
+  height: 190px;
+}
+.products__blocks_h3 {
+  padding: 29px 0 24px 0;
+}
+.products__blocks_p {
+  padding-bottom: 24px;
+}
+.products__blocks_price {
+  font-size: 30px;
+  font-weight: bold;
+}
+.products__blocks_button {
+  font-size: 18px;
+  background-color: #c84344;
+  color: white;
+  padding: 12px 12px 10px 12px;
+}
+.slider-background {
+  background-image: url("images/homepage/piano_musical_instrument_monochrome_dust_music_macro_dark-158628.jpg!d.jpg");
+}
+.slider {
+  position: absolute;
+}
+.register p {
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 10px;
+  color: #5f5e5e;
+}
+.register #myform {
+  margin-left: 200px;
+}
+.register #myform label {
+  color: #5f5e5e;
+  padding-right: 15px;
+  font-size: 22px;
+}
+.register #myform input {
+  border: none;
+  color: #5f5e5e;
+  -webkit-appearance: none;
+  /*for Safari*/
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+.register #myform input::placeholder {
+  color: #cccccc;
+  font-size: 20px;
+}
+.success {
+  display: inline-flex;
+}
+.success__truck {
+  margin-left: 50px;
+  width: 80px;
+  height: 50px;
+}
+.success__thumb {
+  width: 50px;
+  height: 50px;
+}
+.success h1 {
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 10px;
+  color: #5f5e5e;
+}
+.success .success-address {
+  color: #5f5e5e;
+  font-size: 22px;
+  margin-left: 100px;
+  background-color: #7ab702;
+  padding: 20px;
+}
+/* --------------- reset.css --------------- */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* обнуляем отступы и убираем бордюры */
+  vertical-align: baseline;
+  /* приводим все к одной базовой линии */
+  background: transparent;
+  /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+  font-size: 100%;
+  /* размер шрифта всем одинаковый */
+}
+a {
+  /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none;
+}
+table {
+  /* устраняем отступы между ячейками таблицы */
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+td img {
+  vertical-align: top;
+  /* возвращаем привычное вертикальное выравнивание */
+}
+input,
+select,
+button,
+textarea {
+  margin: 0;
+  /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+  font-size: 100%;
+  /* делаем размер шрифтов везде одинаковым */
+  outline: none;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: 0;
+  /* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] {
+  /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+  vertical-align: bottom;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+/* --------------- /reset.css --------------- */
+/* --------------- базовые настройки ---------*/
+html {
+  min-height: 100%;
+  /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+  color: #cccccc;
+  text-align: left;
+  font-size: 1em;
+  /* используем безопасные шрифтовые CSS стеки */
+  min-height: 100%;
+}
+a,
+a:visited {
+  /* порядок правил для ссылок имеет значение */
+  color: #cccccc;
+  text-decoration: none;
+}
+a:hover {
+  color: #fa8d7a;
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  color: #fa8d7a;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 25px;
+}
+img {
+  max-width: 100%;
+}
+.clr {
+  clear: both;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.center-block-main {
+  margin: 0 65px 0 65px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="center-block-main">
+        <div class="header">
+            <p class="header__logo">Musical instruments</p>
+            <div class="header__contact-info">
+                <p class="header__contact-info_phone"><img src="images/icons/IconPhone2.jpg" alt="Call me baby">+371  282  20  760</p>
+                <p class="header__contact-info_trolley"><img src="images/icons/trolleyIcon.png" alt="by it only today"><span id="trolley"></span> <a href="checkout.html" id="linkToCheckout">checkout</a></p>
+            </div>
+        </div>
+        <div class="navbar clearfix">
+            <nav>
+                <ul class="navbar__menu">
+                    <li><a href="homepage.html">home</a></li>
+                    <li><a href="#">band instruments drums</a></li>
+                    <li><a href="#">erhu</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">support</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__search">
+                <form action="" method="get">
+                    <input type="image"src="images/icons/searchIcon.png" class="navbar__search_button">
+                    <input type="search" class="navbar__search_field" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="register center-block-main">
+<p>Register page</p>
+<form id="myform" action="checkout.html">
+    <label>First name</label><input id="name" type="text" placeholder="your name"><br>
+    <label>Last name</label><input id="last-name" type="text" placeholder="your last name"><br>
+    <label>Email</label><input id="email" type="email" placeholder="your email" style="margin-left: 30px "><br>
+    <div id="error-place-foremail"></div>
+    <label>Password</label><input id="password" type="password" placeholder="your password"><br>
+    <label>Shipping address</label><input id="address" type="text" placeholder="where to ship?"><br>
+    <label>Zip code</label><input id="zip-code" type="text" placeholder="type your zip code"><br>
+    <label>Phone number</label><input id="phone" type="text" placeholder="we will call"><br>
+    <div id="div2"></div>
+    <button type="button" class="products__blocks_button" id="register-user" onclick="setData()">Register</button><br>
+</form>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
