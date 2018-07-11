@@ -1,0 +1,28 @@
+.main-homepage img {
+  position: relative;
+}
+.main-homepage__article {
+  position: absolute;
+  margin-top: -700px;
+  display: flex;
+  margin-left: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-homepage__article img {
+  width: 400px;
+  height: 300px;
+}
+.main-homepage__article_description {
+  width: 40%;
+  margin-left: -140px;
+}
+.main-homepage__article_description h3 {
+  padding-bottom: 10px;
+}
+.main-homepage__article_description p {
+  padding-bottom: 10px;
+}
+.main-homepage__article_description_description-button {
+  border: none;
+}

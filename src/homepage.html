@@ -7,7 +7,7 @@
     <script src="lib/jquery-3.3.1.min.js"></script>
 
 </head>
-<body>
+<body onload="checkCountProducts()">
 <header>
     <div class="center-block-main">
         <div class="header">
@@ -36,8 +36,21 @@
         </div>
     </div>
 </header>
-<img src="images/homepage/piano_musical_instrument_monochrome_dust_music_macro_dark-158628.jpg!d.jpg">
-
+<div class="main-homepage ">
+    <img src="images/homepage/piano_musical_instrument_monochrome_dust_music_macro_dark-158628.jpg!d.jpg">
+    <div class="main-homepage__article">
+        <img src="images/homepage/GMS-Ash-Kit-004.jpg" class="main-homepage__article_image">
+        <div class="main-homepage__article_description">
+            <h3>Premier Classic Stage 22</h3>
+            <p>This 8-piece electronic drum kit features all mesh-head pads that deliver an authentic drumming experience.
+                This kit includes an 8" mesh kick pad with bass drum pedal, a 10" dual-zone mesh snare drum, and three 8"
+                dual-zone mesh toms. The set also features a 10" ride cymbal with choke, a 10" crash with choke, and a 10"
+                hi-hat with foot pedal.</p>
+            <button class="main-homepage__article_description-button products__blocks_button" id="play" onclick="playMusic()">Play</button>
+            <audio src="images/homepage/drums.mp3" id="audio"></audio>
+        </div>
+    </div>
+</div>
 
 <div class="products center-block-main" id="products">
     <div class="products__blocks" id="first1">
@@ -125,7 +138,7 @@
     <div class="footer ">
         <nav class="footer__menu">
             <ul class="footer__menu_items">
-                <li><a href="#">home</a></li>
+                <li><a href="homepage.html">home</a></li>
                 <li><a href="#">band instruments drums</a></li>
                 <li><a href="#">erhu</a></li>
                 <li><a href="#">about us</a></li>
@@ -134,6 +147,9 @@
         </nav>
     </div>
 </footer>
+
+
+
 <script src="js/main.js"></script>
 </body>
 </html>

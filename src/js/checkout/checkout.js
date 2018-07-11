@@ -34,16 +34,8 @@ function parseProducts() {
         //next function is deleting product from lockalStorage
         $('#btn-product3').click(function () {
             localStorage.removeItem("userdata3");
+            currentProduct3.remove()
         })
-    }
-}
-
-
-//Counting the price
-function checkUser(){
-    if(localStorage.getItem('user')){
-        localStorage.clear('userdata1','userdata2','userdata3')
-
     }
 }
 
